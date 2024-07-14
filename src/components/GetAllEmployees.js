@@ -16,14 +16,14 @@ const GetAllEmployees = () => {
             }
           }
         );
-        setEmployees(response.data); // Assuming response.data is an array of employees
+        setEmployees(response.data); 
       } catch (error) {
         console.error('Error fetching employees:', error);
       }
     };
 
     fetchEmployees();
-  }, []); // Empty dependency array ensures useEffect runs only once
+  }, []); 
 
   return (
     <div>

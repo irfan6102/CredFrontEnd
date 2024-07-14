@@ -11,7 +11,7 @@ const SendEmail = () => {
         e.preventDefault();
 
         const emailRequest = {
-            toEmail: toEmail.split(',').map(email => email.trim()), // Convert comma-separated string to an array
+            toEmail: toEmail.split(',').map(email => email.trim()), 
             subject: subject,
             body: message,
         };

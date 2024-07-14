@@ -16,14 +16,14 @@ const GetAllVendors = () => {
             }
           }
         );
-        setVendors(response.data); // Assuming response.data is an array of vendors
+        setVendors(response.data); 
       } catch (error) {
         console.error('Error fetching vendors:', error);
       }
     };
 
     fetchVendors();
-  }, []); // Empty dependency array ensures useEffect runs only once
+  }, []); 
 
   return (
     <div>
