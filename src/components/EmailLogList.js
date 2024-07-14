@@ -8,7 +8,7 @@ const EmailLogList = () => {
     const fetchEmailLogs = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:8080/admin/api/emailLogs',
+          'http://localhost:8080/admin/emailLogs',
           {
             auth: {
               username: 'admin',
@@ -16,14 +16,14 @@ const EmailLogList = () => {
             }
           }
         );
-        setEmailLogs(response.data); // Assuming response.data is an array of email logs
+        setEmailLogs(response.data); 
       } catch (error) {
         console.error('Error fetching email logs:', error);
       }
     };
 
     fetchEmailLogs();
-  }, []); // Empty dependency array ensures useEffect runs only once
+  }, []); 
 
   return (
     <div>
